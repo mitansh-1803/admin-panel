@@ -486,7 +486,7 @@ $(document).ready(function(){
     }
     var input = document.getElementsByName('search-box')[0];
     input.oninput = function(){
-        var inputValue = input.value;
+        var inputValue = input.value.toUpperCase();
         table = document.getElementById('users-table');
         tr = table.getElementsByTagName("tr");
         for (i = 0; i < tr.length; i++) {
